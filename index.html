@@ -25,7 +25,7 @@
                 <div class="wrapper-input">
                     <h2 class="title">Bill</h2>
                     <div class="box-input">
-                        <input type="text" placeholder="0">
+                        <input type="text" placeholder="0" id="bill">
                         <img src="./images/icon-dollar.svg" alt="Icon Dolar">
                     </div>
                 </div>
@@ -34,20 +34,20 @@
                     <h2 class="title">Select Tip %</h2>
 
                     <div class="btns">
-                        <button type="button" class="btn">5%</button>
-                        <button type="button" class="btn">10%</button>
-                        <button type="button" class="btn">15%</button>
-                        <button type="button" class="btn">25%</button>
-                        <button type="button" class="btn">50%</button>
+                        <button type="button" class="btn tip-btn" id="five">5%</button>
+                        <button type="button" class="btn tip-btn" id="ten">10%</button>
+                        <button type="button" class="btn tip-btn active" id="fifteen">15%</button>
+                        <button type="button" class="btn tip-btn" id="twenty-five">25%</button>
+                        <button type="button" class="btn tip-btn" id="fifty">50%</button>
                         <input type="text" placeholder="Custom" class="btn" id="custom">
                     </div>
                 </div>
 
                 <div class="wrapper-input">
                     <h2 class="title">Number of People</h2>
-                    <small>Can't be zero</small>
+                    <small class="error">Can't be zero</small>
                     <div class="box-input">
-                        <input type="text" placeholder="0">
+                        <input type="text" placeholder="1" id="people">
                         <img src="./images/icon-person.svg" alt="Icon Person">
                     </div>
                 </div>
@@ -60,21 +60,23 @@
                             <p class="description">/ person</p>
                         </div>
                         
-                        <div class="info-value">$0.00</div>
+                        <div class="info-value" id="amount">$0.00</div>
                     </div>
     
                     <div class="output-info">
                         <div class="info">
-                            <h2 class="title variant">Tip Amount</h2>
+                            <h2 class="title variant">Total</h2>
                             <p class="description">/ person</p>
                         </div>
                         
-                        <div class="info-value">$0.00</div>
+                        <div class="info-value" id="total">$0.00</div>
                     </div>
                 </div>
                 <button type="button" class="btn" id="reset">Reset</button>
             </section>
         </div>
     </main>
+
+    <script src="./scripts/script.js"></script>
 </body>
 </html>
