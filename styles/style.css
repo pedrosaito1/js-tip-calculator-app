@@ -1,0 +1,10 @@
+html {
+    background-color: hsl(185, 41%, 84%);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35vh;
+}
