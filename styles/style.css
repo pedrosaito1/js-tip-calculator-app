@@ -16,11 +16,23 @@ main {
 
 .container {
     display: flex;
+    justify-content: space-between;
     align-items: center;
     margin: 0 auto;
+    padding: 40px;
     max-width: 1000px;
     height: 500px;
     background-color: #FFF;
     border-radius: 20px;
     box-shadow: 0 3px 3px rgb(0 0 0 / 20%);
+}
+
+.box {
+    height: 100%;
+    width: 48%;
+}
+
+.output {
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 20px;
 }
