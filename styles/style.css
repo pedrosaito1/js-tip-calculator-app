@@ -56,8 +56,13 @@ main {
 }
 
 .output {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
     background-color: hsl(183, 100%, 15%);
     border-radius: 20px;
+    padding: 30px;
 }
 
 .wrapper-input {
@@ -144,4 +149,47 @@ main {
 
 .btns #custom:focus {
     outline: 2.5px solid hsl(172, 80%, 46%);
+}
+
+.wrapper-info {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+}
+
+.output-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info h2 {
+    color: #FFF;
+    font-size: 16px;
+}
+
+.info p {
+    color: hsl(186, 14%, 43%);
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.info-value {
+    font-size: 45px;
+    color: hsl(172, 80%, 46%);
+}
+
+#reset {
+    width: 100%;
+    margin: 0;
+    background-color: hsl(180, 53%, 31%);
+    text-transform: uppercase;
+    color: #FFF;
+    cursor: pointer;
+}
+
+#reset:hover {
+    background-color: hsl(172, 80%, 46%);
+    transition: 0.8s;
 }
