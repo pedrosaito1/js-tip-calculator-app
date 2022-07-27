@@ -19,7 +19,6 @@ This is a solution to the [Tip calculator app](https://www.frontendmentor.io/cha
 ## Built with
 
 - Flexbox
-- Grid layout
 - Media queries
 - Responsive Web design
 
