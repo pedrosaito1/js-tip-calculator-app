@@ -32,7 +32,55 @@ main {
     width: 48%;
 }
 
+.input {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 10px;
+}
+
 .output {
     background-color: hsl(183, 100%, 15%);
     border-radius: 20px;
+}
+
+.wrapper-input {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+}
+
+.wrapper-input h2 {
+    font-size: 14px;
+    color: hsl(186, 14%, 43%);
+    margin-bottom: 10px;
+}
+
+.wrapper-input input {
+    height: 45px;
+    padding: 20px;
+    text-align: right;
+    border: none;
+    border-radius: 6px;
+    background-color: hsl(180, 38%, 87%);
+    color: hsl(183, 100%, 15%);
+    font-size: 18px;
+}
+
+.wrapper-input input::placeholder {
+    color: hsl(183, 100%, 15%);
+}
+
+.wrapper-input small {
+    position: absolute;
+    display: none;
+    color: #ff0000;
+    font-size: 14px;
+    right: 2px;
+}
+
+.wrapper-input small.active {
+    display: block;
 }
