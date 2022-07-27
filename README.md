@@ -10,7 +10,7 @@ This is a solution to the [Tip calculator app](https://www.frontendmentor.io/cha
 
 ## Screenshot
 
-<img src="" alt="Screenshot">
+<img src="./images/screenshot.png" alt="Screenshot">
 
 ## Links
 
