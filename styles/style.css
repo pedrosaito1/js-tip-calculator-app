@@ -14,19 +14,7 @@ main {
     padding: 30px;
 }
 
-.container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 auto;
-    padding: 40px;
-    max-width: 800px;
-    height: 420px;
-    background-color: #FFF;
-    border-radius: 20px;
-    box-shadow: 0 3px 3px rgb(0 0 0 / 20%);
-}
-
+/*Global Classes*/
 .box {
     height: 100%;
     width: 48%;
@@ -38,6 +26,17 @@ main {
     margin-bottom: 10px;
 }
 
+.title.variant {
+    color: #FFF;
+    margin: 0;
+}
+
+.description {
+    color: hsl(186, 14%, 43%);
+    margin-top: 10px;
+    font-size: 14px;
+}
+
 .btn {
     width: 100px;
     height: 40px;
@@ -45,6 +44,21 @@ main {
     border: none;
     border-radius: 6px;
     margin-bottom: 10px;
+}
+
+/*Containers*/
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 40px;
+    max-width: 800px;
+    height: 420px;
+    background-color: #FFF;
+    border-radius: 20px;
+    box-shadow: 0 3px 3px rgb(0 0 0 / 20%);
 }
 
 .input {
@@ -64,6 +78,8 @@ main {
     border-radius: 20px;
     padding: 30px;
 }
+
+/*Others*/
 
 .wrapper-input {
     display: flex;
@@ -106,6 +122,10 @@ main {
 
 .box-input input:focus {
     outline: 2.5px solid hsl(172, 80%, 46%);
+}
+
+.box-input input.active {
+    border: 2.5px solid #ff0000;
 }
 
 .box-input img {
@@ -162,17 +182,6 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.info h2 {
-    color: #FFF;
-    font-size: 16px;
-}
-
-.info p {
-    color: hsl(186, 14%, 43%);
-    margin-top: 10px;
-    font-size: 14px;
 }
 
 .info-value {
