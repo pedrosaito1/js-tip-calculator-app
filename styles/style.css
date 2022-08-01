@@ -69,6 +69,10 @@ main {
     padding: 10px;
 }
 
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;   
+}
+
 .output {
     display: flex;
     flex-direction: column;
